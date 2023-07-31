@@ -1,0 +1,9 @@
+﻿@model List<Category>
+<div class="text-center my-4">
+    <ul class="list-group">
+        @foreach (var category in Model)
+        {
+            <li class="list-group-item">@category.CategoryName (@await Component.InvokeAsync("CategoriesSummary", category.Id))</li>
+        }
+    </ul>
+</div>
