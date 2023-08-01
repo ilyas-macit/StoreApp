@@ -1,12 +1,9 @@
-using Entities.Models;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.Logging.Configuration;
 using Repositories;
 using Repositories.Contracts;
 using Repositories.EntityFramework;
 using Services;
 using Services.Contracts;
-using StoreApp.Models;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -18,19 +15,15 @@ builder.Services.AddDbContext<RepositoryContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
 });
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
-builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
+builder.Services.AddScoped<ICategoryRepository, CategoryRepository>(); 
 builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<IServiceManager, ServiceManager>();
-builder.Services.AddScoped<Cart>(c => SessionCart.GetCart(c));
 
 builder.Services.AddAutoMapper(typeof(Program));
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -42,7 +35,6 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
-app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
 
