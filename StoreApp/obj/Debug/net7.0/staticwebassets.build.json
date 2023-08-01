@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xbRGSy6axA7hYkijIy2vKCeE5NdDcJ0WRN41CRKKDqY=",
+  "Hash": "Co5vG1p6dUGp0/XwQJP1E5GnlL+IHL6LaGivCvRcMOE=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -134,6 +134,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\pp.png"
+    },
+    {
+      "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\pro-x-keyboard-gallery-1.png",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "Images/pro-x-keyboard-gallery-1.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\pro-x-keyboard-gallery-1.png"
     },
     {
       "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\js\\site.js",

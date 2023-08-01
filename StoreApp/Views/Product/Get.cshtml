@@ -10,6 +10,13 @@
             <div class="btn-group">
                 <a asp-action="Index" class="btn btn-primary"> <i class="fa-solid fa-list"></i> Products</a>
                 <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary"><i class="fa-solid fa-house"></i>Home</a>
+                <form method="post" asp-page="/Cart">
+                    <input type="hidden" asp-for="Id">
+                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()">
+                    <button class="btn btn-primary">
+                        <i class="fa fa-cart-plus"></i>
+                    </button>
+                </form>
             </div>
         </div>
     </div>

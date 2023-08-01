@@ -10,6 +10,7 @@
             <div class="btn-group">
                 <form method="post" asp-page="/cart">
                     <input type="hidden" asp-for="Id" >
+                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()">
                     <button class="btn btn-outline-primary" type="submit" >
                         <i class="fa fa-cart-plus"></i>
                     </button>
