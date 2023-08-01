@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Services.Contracts;
+using StoreApp.Infrastructure.Extensions;
 
 namespace StoreApp.Pages;
 
@@ -18,7 +19,6 @@ public class CartModel : PageModel
 
     public void OnGet()
     {
-        
     }
 
     public IActionResult OnPost(int id)
@@ -26,7 +26,7 @@ public class CartModel : PageModel
         Product product = _serviceManager.ProductService.GetById(id,false);
         if (product is not null)
         {
-            Cart.AddLine(product, 1); 
+            Cart.AddLine(product, 1);
         }
         return Page();
     }
