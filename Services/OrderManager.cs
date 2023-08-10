@@ -27,11 +27,13 @@ public class OrderManager : IOrderService
     public void Complete(int id)
     {
         _manager.Order.Complete(id);
+        _manager.Save();
     }
 
     public void SaveOrder(Order order)
     {
         _manager.Order.SaveOrder(order);
+        _manager.Save();
     }
 
     public int NumberOfInProgress => _manager.Order.NumberOfInProgress;

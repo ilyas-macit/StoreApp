@@ -5,11 +5,11 @@ namespace Repositories.EntityFramework;
 public class RepositoryManager : IRepositoryManager
 {
     private readonly IProductRepository _productRepository;
-    private readonly RepositoryContext _context;
+    private readonly StoreAppContext _context;
     private readonly ICategoryRepository _categoryRepository;
     private readonly IOrderRepository _orderRepository;
 
-    public RepositoryManager(IProductRepository productRepository, RepositoryContext context, ICategoryRepository categoryRepository, IOrderRepository orderRepository)
+    public RepositoryManager(IProductRepository productRepository, StoreAppContext context, ICategoryRepository categoryRepository, IOrderRepository orderRepository)
     {
         _productRepository = productRepository;
         _categoryRepository = categoryRepository;

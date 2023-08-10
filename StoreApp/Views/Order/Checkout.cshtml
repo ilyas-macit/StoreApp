@@ -1,0 +1,19 @@
+﻿@model Order
+
+<h1 class="text-center">Checkout</h1>
+<form method="post" asp-action="Checkout">
+   <div class="form-group">
+      <label class="my-3 form-control" asp-for="Name"></label>
+      <input class="my-3 form-control" type="text" asp-for="Name">
+   </div> 
+   <div class="form-group">
+      <label class="my-3 form-control" asp-for="Country"></label>
+      <input class="my-3 form-control" type="text" asp-for="Country">
+   </div> 
+   <div class="form-group">
+      <label class="my-3 form-control" asp-for="City"></label>
+      <input class="my-3 form-control" type="text" asp-for="City">
+   </div> 
+   <div class="d-flex"></div>
+   <button type="submit" class="btn btn-primary">Complete Order</button>
+</form>

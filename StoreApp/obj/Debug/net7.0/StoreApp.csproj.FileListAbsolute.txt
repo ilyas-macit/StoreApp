@@ -86,3 +86,11 @@ C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Services.dll
 C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Services.pdb
 C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\AutoMapper.dll
 C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Humanizer.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\System.CodeDom.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\System.Text.Encodings.Web.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\System.Text.Json.dll
+C:\Users\ilyas\RiderProjects\Store\StoreApp\bin\Debug\net7.0\runtimes\browser\lib\net7.0\System.Text.Encodings.Web.dll

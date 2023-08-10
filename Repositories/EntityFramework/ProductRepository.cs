@@ -5,7 +5,7 @@ namespace Repositories.EntityFramework;
 
 public class ProductRepository :RepositoryBase<Product>, IProductRepository
 {
-    public ProductRepository(RepositoryContext context) : base(context)
+    public ProductRepository(StoreAppContext context) : base(context)
     {
     }
 

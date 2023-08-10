@@ -6,7 +6,7 @@ namespace Repositories.EntityFramework;
 
 public class OrderRepository : RepositoryBase<Order>, IOrderRepository
 {
-    public OrderRepository(RepositoryContext context) : base(context)
+    public OrderRepository(StoreAppContext context) : base(context)
     {
     }
 

@@ -11,5 +11,5 @@ public class Product
     public string? Summary { get; set; }
     public string ImageUrl { get; set; }
     public int? CategoryId { get; set; }//Foreign key
-    
+    public bool ShowCase { get; set; } 
 }

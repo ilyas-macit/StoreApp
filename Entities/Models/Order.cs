@@ -11,5 +11,4 @@ public class Order
     public bool Shipped { get; set; }
     public DateTime OrderedDate { get; set; }
     
-
 }

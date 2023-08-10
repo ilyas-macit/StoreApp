@@ -7,9 +7,9 @@ namespace Repositories.EntityFramework;
 public abstract class RepositoryBase<T> : IRepositoryBase<T>
 where T: class, new()
 {
-    protected readonly RepositoryContext _context;
+    protected readonly StoreAppContext _context;
 
-    public RepositoryBase(RepositoryContext context)
+    public RepositoryBase(StoreAppContext context)
     {
         _context = context;
     }

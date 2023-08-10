@@ -6,35 +6,19 @@ using Repositories.Contracts;
 using Repositories.EntityFramework;
 using Services;
 using Services.Contracts;
+using StoreApp.Infrastructure.Extensions;
 using StoreApp.Models;
-
-
 var builder = WebApplication.CreateBuilder(args);
-
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<RepositoryContext>(options =>
-{
-    options.UseSqlServer(builder.Configuration.GetConnectionString("SqlConnection"));
-});
-builder.Services.AddDistributedMemoryCache();
-builder.Services.AddSession();
+builder.Services.ConfigureSession();
+builder.Services.ConfigureDbContext(builder.Configuration);
 builder.Services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IRepositoryManager, RepositoryManager>();
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<IProductService, ProductManager>();
-builder.Services.AddScoped<ICategoryService, CategoryManager>();
-builder.Services.AddScoped<IServiceManager, ServiceManager>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IOrderService, OrderManager>();
-
+builder.Services.ConfigureRepositoryRegistration();
+builder.Services.ConfigureServiceRegistration();
 builder.Services.AddScoped<Cart>(c => SessionCart.GetCart(c));
 builder.Services.AddAutoMapper(typeof(Program));
-
-
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())
@@ -49,16 +33,13 @@ app.UseStaticFiles();
 app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
-
+app.ConfigureAndCheckMigration();
 app.MapAreaControllerRoute(
     name: "Admin", 
     areaName: "Admin",
     pattern: "Admin/{controller=Dashboard}/{action=Index}/{id?}");
-
 app.MapControllerRoute(
     name: "default", 
     pattern: "{controller=Home}/{action=Index}/{id?}");
-
 app.MapRazorPages();
-
 app.Run();

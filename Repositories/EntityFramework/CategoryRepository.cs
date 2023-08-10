@@ -5,7 +5,7 @@ namespace Repositories.EntityFramework;
 
 public class CategoryRepository : RepositoryBase<Category>, ICategoryRepository
 {
-    public CategoryRepository(RepositoryContext context) : base(context)
+    public CategoryRepository(StoreAppContext context) : base(context)
     {
         
     }
