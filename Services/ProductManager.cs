@@ -21,6 +21,11 @@ public class ProductManager : IProductService
         return _manager.Product.GetAllProducts(trackChanges);
     }
 
+    public IEnumerable<Product> GetShowCaseProducts(bool trackChanges)
+    {
+        return _manager.Product.GetShowCaseProducts(trackChanges);
+    }
+
     public Product? GetById(int id, bool trackChanges)
     {
         var product = _manager.Product.GetById(id, trackChanges);

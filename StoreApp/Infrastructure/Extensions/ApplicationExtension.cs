@@ -19,4 +19,14 @@ public static class ApplicationExtension
             context.Database.Migrate(); 
         }
     }
+
+    public static void ConfigureLocalization(this WebApplication app)
+    {
+        app.UseRequestLocalization(options =>
+        {
+            options.AddSupportedCultures("tr-TR")
+                .SetDefaultCulture("tr-TR");
+
+        });
+    }
 }

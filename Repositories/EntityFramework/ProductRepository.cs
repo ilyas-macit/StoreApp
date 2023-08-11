@@ -10,6 +10,9 @@ public class ProductRepository :RepositoryBase<Product>, IProductRepository
     }
 
     public IQueryable<Product> GetAllProducts(bool trackChanges) => FindAll(trackChanges);
+    public IQueryable<Product> GetShowCaseProducts(bool trackChanges) => FindAll(trackChanges)
+        .Where(p => p.ShowCase.Equals(true));
+
 
     public Product? GetById(int id, bool trackChanges) => FindByCondition(p => p.Id == id, trackChanges);
     public void CreateProduct(Product product) => Create(product);

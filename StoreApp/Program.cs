@@ -34,6 +34,7 @@ app.UseSession();
 app.UseRouting();
 app.UseAuthorization();
 app.ConfigureAndCheckMigration();
+app.ConfigureLocalization();
 app.MapAreaControllerRoute(
     name: "Admin", 
     areaName: "Admin",
