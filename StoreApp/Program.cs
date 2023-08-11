@@ -19,6 +19,8 @@ builder.Services.ConfigureRepositoryRegistration();
 builder.Services.ConfigureServiceRegistration();
 builder.Services.AddScoped<Cart>(c => SessionCart.GetCart(c));
 builder.Services.AddAutoMapper(typeof(Program));
+builder.Services.ConfigureRouting();
+
 var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (!app.Environment.IsDevelopment())

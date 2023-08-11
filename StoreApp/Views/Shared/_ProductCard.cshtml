@@ -1,7 +1,6 @@
 ﻿@model Product
 <div class="col-md-4 my-4">
     <div class="card" style="width: 18rem">
-
         <div class="card-header">
             <p class="card-text">@Model.ProductName</p>
         </div>
@@ -23,6 +22,7 @@
                     <a class="btn btn-outline-secondary mx-1 rounded-2" asp-controller="Product" asp-action="Get" asp-route-id="@Model.Id">
                         <i class="fa-solid fa-arrow-right"></i>
                     </a>
+                    
                 </div>
             </div>
         </div>

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Co5vG1p6dUGp0/XwQJP1E5GnlL+IHL6LaGivCvRcMOE=",
+  "Hash": "XksoKvPjisgX3EwsjybLBZcB4EWXQe2nD91l6QyeTPA=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -83,6 +83,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\0f472244ddfc49fb9d5bc7cde155b95e.webp",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "Images/0f472244ddfc49fb9d5bc7cde155b95e.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\0f472244ddfc49fb9d5bc7cde155b95e.webp"
     },
     {
       "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\1_org_zoom (1).webp",

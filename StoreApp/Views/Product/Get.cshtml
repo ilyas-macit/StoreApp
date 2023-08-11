@@ -8,11 +8,11 @@
             <img class="img-fluid rounded shadow" width="400px" src="@Model.ImageUrl" alt="@Model.ProductName">
             <p class="lead text-danger">@Model.Price</p>
             <div class="btn-group">
-                <a  asp-action="Index" class="btn btn-primary"> <i class="fa-solid fa-list"></i> Products</a>
-                <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary"><i class="fa-solid fa-house"></i>Home</a>
+                <a  asp-action="Index" class="btn btn-primary rounded-2"> <i class="fa-solid fa-list"></i> Products</a>
+                <a asp-action="Index" asp-controller="Home" class="btn btn-outline-primary mx-1 rounded-2"><i class="fa-solid fa-house"></i>Home</a>
                 <form method="post" asp-page="/Cart">
                     <input type="hidden" asp-for="Id">
-                    <input type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()">
+                    <input  type="hidden" name="returnUrl" value="@ViewContext.HttpContext.Request.PathAndQuery()">
                     <button class="btn btn-primary">
                         <i class="fa fa-cart-plus"></i>
                     </button>

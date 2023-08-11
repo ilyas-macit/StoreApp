@@ -3,7 +3,16 @@
     <ul class="list-group">
         @foreach (var category in Model)
         {
-            <li class="list-group-item">@category.CategoryName (@await Component.InvokeAsync("CategoriesSummary", category.Id))</li>
+            <li class="list-group-item">
+                <a  asp-action="Index" asp-route-categoryId="@category?.Id">
+                    @category.CategoryName (@await Component.InvokeAsync("CategoriesSummary", category.Id))
+                </a>
+            </li>
         }
+        <li class="list-group-item">
+            <a asp-action="Index" asp-route-categoryId="">
+                All(@Model.Count)
+            </a>
+        </li>
     </ul>
 </div>
