@@ -17,12 +17,24 @@
       "PackagePath": "staticwebassets\\Images\\1_org_zoom.webp"
     },
     {
+      "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\devlet.jpg",
+      "PackagePath": "staticwebassets\\Images\\devlet.jpg"
+    },
+    {
+      "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\hamlet.jpg",
+      "PackagePath": "staticwebassets\\Images\\hamlet.jpg"
+    },
+    {
       "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\pp.png",
       "PackagePath": "staticwebassets\\Images\\pp.png"
     },
     {
       "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\pro-x-keyboard-gallery-1.png",
       "PackagePath": "staticwebassets\\Images\\pro-x-keyboard-gallery-1.png"
+    },
+    {
+      "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\samsung-a15.jpeg",
+      "PackagePath": "staticwebassets\\Images\\samsung-a15.jpeg"
     },
     {
       "Id": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\css\\site.css",

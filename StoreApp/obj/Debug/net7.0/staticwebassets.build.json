@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XksoKvPjisgX3EwsjybLBZcB4EWXQe2nD91l6QyeTPA=",
+  "Hash": "ITGHhlHou2qClz+yCApfbeXKYVpg1+Ai9GQNsPcz4+E=",
   "Source": "StoreApp",
   "BasePath": "_content/StoreApp",
   "Mode": "Default",
@@ -136,6 +136,40 @@
       "OriginalItemSpec": "wwwroot\\Images\\1_org_zoom.webp"
     },
     {
+      "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\devlet.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "Images/devlet.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\devlet.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\hamlet.jpg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "Images/hamlet.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\hamlet.jpg"
+    },
+    {
       "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\pp.png",
       "SourceId": "StoreApp",
       "SourceType": "Discovered",
@@ -168,6 +202,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\pro-x-keyboard-gallery-1.png"
+    },
+    {
+      "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\Images\\samsung-a15.jpeg",
+      "SourceId": "StoreApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\",
+      "BasePath": "_content/StoreApp",
+      "RelativePath": "Images/samsung-a15.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\samsung-a15.jpeg"
     },
     {
       "Identity": "C:\\Users\\ilyas\\RiderProjects\\Store\\StoreApp\\wwwroot\\js\\site.js",

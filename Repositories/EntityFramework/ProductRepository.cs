@@ -13,6 +13,12 @@ public sealed class ProductRepository : RepositoryBase<Product>, IProductReposit
     }
 
     public IQueryable<Product> GetAllProducts(bool trackChanges) => FindAll(trackChanges);
+    public IQueryable<Product> GetLatestProducts(int n, bool trackChanges)
+    {
+        return FindAll(false)
+            .OrderByDescending(p => p.Id)
+            .Take(n);
+    }
 
     public IQueryable<Product> GetShowCaseProducts(bool trackChanges) => FindAll(trackChanges)
         .Where(p => p.ShowCase.Equals(true));
@@ -23,7 +29,9 @@ public sealed class ProductRepository : RepositoryBase<Product>, IProductReposit
             .Products
             .FilteredByCategoryId(parameters.CategoryId)
             .FilteredBySearchTerm(parameters.SearchTerm)
-            .FilteredByPrice(parameters.MinPrice, parameters.MaxPrice, parameters.IsValidPrice);
+            .FilteredByPrice(parameters.MinPrice, parameters.MaxPrice, parameters.IsValidPrice)
+            .ToPagination(parameters.PageNumber, parameters.PageSize);
+        
     }
 
 

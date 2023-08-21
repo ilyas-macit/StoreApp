@@ -28,4 +28,12 @@ public static class ProductRepositoryExtension
             ? products.Where(p => p.Price >= minPrice && p.Price <= maxPrice)
             : products;
     }
+
+    public static IQueryable<Product> ToPagination(this IQueryable<Product> products, int pageNumber, int pageSize)
+    {
+        
+        return products
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize);
+    }
 }

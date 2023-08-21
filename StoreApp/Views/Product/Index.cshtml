@@ -1,16 +1,28 @@
-﻿@model List<Product>
+﻿@model ProductListViewModel
 
 <div class="row">
     <div class="col-md-3">
         @await Component.InvokeAsync("CategoriesMenu")
         @await Component.InvokeAsync("ProductFilterMenu")
+        <div products="" number="4"></div>
     </div>
     <div class="col-md-9">
         <div class="row">
-            @foreach (var product in Model)
+            @foreach (var product in Model.Products)
             {
                 <partial name="_ProductCard" model="product"/>
             }
+
         </div>
+        <div
+            page-model="@Model?.Pagination"
+            page-action="Index"
+            class="btn-group" 
+            page-classes-enable="true" 
+            page-class="btn" 
+            page-class-normal="btn-outline-dark" 
+            page-class-selected="btn-primary">
+        </div>
+        
     </div>
 </div>

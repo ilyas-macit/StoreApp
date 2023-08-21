@@ -1,4 +1,10 @@
 ﻿@model List<Category>
+<div>
+    <h6 class="text-secondary">
+    <i class="fa fa-list"></i>
+    Category    
+    </h6>
+</div>
 <div class="text-center my-4">
     <ul class="list-group">
         @foreach (var category in Model)
@@ -14,5 +20,6 @@
                 All(@Model.Count)
             </a>
         </li>
+        
     </ul>
 </div>

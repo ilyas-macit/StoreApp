@@ -22,6 +22,11 @@ public class ProductManager : IProductService
         return _manager.Product.GetAllProducts(trackChanges);
     }
 
+    public IEnumerable<Product> GetLatestProducts(int n, bool trackChanges)
+    {
+        return _manager.Product.GetLatestProducts(n, trackChanges);
+    }
+
     public IEnumerable<Product> GetAllProductsWithDetails(ProductRequestParameters parameters)
     {
         return _manager.Product.GetAllProductsWithDetails(parameters);

@@ -8,14 +8,17 @@ public class ServiceManager : IServiceManager
     private readonly IProductService _productService;
 
     private readonly IOrderService _orderService;
-    public ServiceManager(IProductService productService, ICategoryService categoryService, IOrderService orderService)
+    private readonly IAuthService _authService;
+    public ServiceManager(IProductService productService, ICategoryService categoryService, IOrderService orderService, IAuthService authService)
     {
         _productService = productService;
         _categoryService = categoryService;
         _orderService = orderService;
+        _authService = authService;
     }
 
     public ICategoryService CategoryService => _categoryService;
     public IProductService ProductService => _productService;
     public IOrderService OrderService => _orderService;
+    public IAuthService AuthService => _authService;
 }
